@@ -8,7 +8,7 @@ class myMenuBar {
 
     JMenuBar menuBar = new JMenuBar();
 
-    JMenu menuFile = new JMenu("File");
+    JMenu menuFile = new JMenu("File          ");
     JMenu menuHelp = new JMenu("Help");
 
     JMenuItem open = new JMenuItem("Open");
