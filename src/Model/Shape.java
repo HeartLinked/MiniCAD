@@ -1,4 +1,4 @@
-package View;
+package Model;
 
 import java.awt.*;
 import java.io.Serial;
@@ -21,7 +21,7 @@ public abstract class Shape implements Serializable{
         thick = 3;
     }
 
-    protected abstract void draw(Graphics g);
+    public abstract void draw(Graphics g);
 
     protected abstract boolean isSelected(Point p);
 
@@ -117,7 +117,6 @@ class Line extends Shape implements Serializable {//线段
         g2.setStroke(new BasicStroke(thick));
         g2.setColor(color);
         g2.drawLine(ps.get(0).x, ps.get(0).y, ps.get(1).x, ps.get(1).y);
-
     }
 
     @Override
@@ -193,131 +192,6 @@ class Oval extends Shape implements Serializable {
         if(p.x > points[0].x && p.y > points[0].y && p.x<points[1].x && p.y<points[1].y)
             return true;
         else return false;
-    }
-
-}
-
-class FilledRect extends Shape implements Serializable {
-
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-
-    FilledRect(Point pp1, Point pp2) {
-        super(pp1, pp2);
-    }
-
-    @Override
-    public void draw(Graphics g) {
-        Graphics2D g2 = (Graphics2D)g;
-        g2.setStroke(new BasicStroke(thick));
-        g2.setColor(color);
-        Point points[] = adjustPoint();
-        g2.fillRect(points[0].x, points[0].y, points[1].x - points[0].x, points[1].y - points[0].y);
-    }
-
-    @Override
-    protected boolean isSelected(Point p) {
-        Point[] points = adjustPoint();
-        if(p.x > points[0].x && p.y > points[0].y && p.x<points[1].x && p.y<points[1].y)
-            return true;
-        else return false;
-    }
-
-}
-
-class FilledOval extends Shape implements Serializable {
-
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-
-    FilledOval(Point pp1, Point pp2) {
-        super(pp1, pp2);
-    }
-
-    @Override
-    public void draw(Graphics g) {
-        Graphics2D g2 = (Graphics2D)g;
-        g2.setStroke(new BasicStroke(thick));
-        g2.setColor(color);
-        Point points[] = adjustPoint();
-        g2.fillOval(points[0].x, points[0].y, points[1].x - points[0].x, points[1].y - points[0].y);
-    }
-
-    @Override
-    protected boolean isSelected(Point p) {
-        Point[] points = adjustPoint();
-        if(p.x > points[0].x && p.y > points[0].y && p.x<points[1].x && p.y<points[1].y)
-            return true;
-        else return false;
-    }
-
-}
-
-class MyPolyline extends Shape implements Serializable {
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-
-    MyPolyline(Point pp1, Point pp2) {
-        super(pp1, pp2);
-    }
-
-    @Override
-    public void draw(Graphics g) {
-        Graphics2D g2 = (Graphics2D)g;
-        g2.setStroke(new BasicStroke(thick));
-        g2.setColor(color);
-        for(int i = 0; i < ps.size()-1; i++) {
-            g2.drawLine(ps.get(i).x, ps.get(i).y, ps.get(i+1).x, ps.get(i+1).y);
-        }
-    }
-
-    @Override
-    protected boolean isSelected(Point p) {
-        for(int i = 0; i < ps.size()-1; i++) {
-            Line l= new Line(ps.get(i), ps.get(i+1));
-            if(l.isSelected(p)) return true;
-        }
-        return false;
-    }
-
-}
-
-class MyPolygon extends Shape implements Serializable {
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-
-    MyPolygon(Point pp1, Point pp2) {
-        super(pp1, pp2);
-    }
-
-    @Override
-    public void draw(Graphics g) {
-        Graphics2D g2 = (Graphics2D)g;
-        g2.setStroke(new BasicStroke(thick));
-        g2.setColor(color);
-        for(int i = 0; i < ps.size()-1; i++) {
-            g2.drawLine(ps.get(i).x, ps.get(i).y, ps.get(i+1).x, ps.get(i+1).y);
-        }
-        g2.drawLine(ps.get(ps.size()-1).x, ps.get(ps.size()-1).y, ps.get(0).x, ps.get(0).y);
-    }
-
-    @Override
-    protected boolean isSelected(Point p) {
-        for(int i = 0; i < ps.size()-1; i++) {
-            Line l= new Line(ps.get(i), ps.get(i+1));
-            if(l.isSelected(p)) return true;
-        }
-        Line l= new Line(ps.get(ps.size()-1), ps.get(0));
-        if(l.isSelected(p)) return true;
-        return false;
     }
 
 }
