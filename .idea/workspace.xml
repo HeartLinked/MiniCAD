@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21e78c5-7f8f-4190-8fb6-ffaa4d77c5d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwingDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/myController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MiniCAD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/myModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/myMenuBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/myView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/myController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/myController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MiniCAD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MiniCAD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Text.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/myModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/myModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/buttonBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/buttonBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/myMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/myMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/myView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/myView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,8 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -74,7 +75,17 @@
       <workItem from="1668224922617" duration="620000" />
       <workItem from="1668227552714" duration="1000" />
       <workItem from="1668227560024" duration="4830000" />
-      <workItem from="1668232656885" duration="5639000" />
+      <workItem from="1668232656885" duration="11221000" />
+      <workItem from="1668308426363" duration="3455000" />
+      <workItem from="1668321724733" duration="1707000" />
+      <workItem from="1668348000469" duration="772000" />
+      <workItem from="1668389503051" duration="85000" />
+      <workItem from="1668389603798" duration="29000" />
+      <workItem from="1668389846995" duration="196000" />
+      <workItem from="1668390746206" duration="16000" />
+      <workItem from="1668390842289" duration="708000" />
+      <workItem from="1668393371155" duration="17727000" />
+      <workItem from="1668502945569" duration="14296000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,6 @@ class myMenuBar {
 
     JMenuItem open = new JMenuItem("Open");
     JMenuItem save = new JMenuItem("Save");
-    JMenuItem exit = new JMenuItem("Exit");
 
     JMenuItem quickStart = new JMenuItem("Quick Start");
     JMenuItem aboutMiniCAD = new JMenuItem("About MiniCAD");
@@ -32,7 +31,6 @@ class myMenuBar {
 
         menuFile.add(open);
         menuFile.add(save);
-        menuFile.add(exit);
     }
 
     void addListener() {
