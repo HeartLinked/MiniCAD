@@ -2,19 +2,17 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.Serial;
-import java.util.Random;
 
 public class myView extends JFrame {
 
     private String shape="";
-    public static MyCanvas drawArea = new MyCanvas();
+    public static canvas drawArea = new canvas();
     public myView() {
         super("MiniCAD");
         setSize(1000, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        myMenuBar menuBar = new myMenuBar();
+        View.menuBar menuBar = new menuBar();
         setJMenuBar(menuBar.menuBar);
 
         Panel myButtonBar = new buttonBar();

@@ -20,14 +20,12 @@ public class myController {
     public static String statusNow = "";  // "selected" / "line" / "circle" / "rectangle" / "text" / "idle"
     public static String textString = "";
     public static Color selectedColor = new Color(0, 0, 0);
+    public static Point dragPoint, startPoint, endPoint;
     public static Shape selectedShape ;
-
     public static buttonStatusAutoChange buttonStatusAutoChange = new buttonStatusAutoChange();
-
     public static class buttonStatusAutoChange implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            // 相应的逻辑判断
             JToggleButton toggleBtn = (JToggleButton) e.getSource();
             boolean status = !toggleBtn.isSelected();
             String string = buttonBar.map.get(toggleBtn);
@@ -69,14 +67,28 @@ public class myController {
                         myView.drawArea.repaint();
                     }
                 }
+                case "big" -> {
+                    if (selectedShape != null) {
+                        Point A = selectedShape.points.get(0);
+                        Point B = selectedShape.points.get(1);
+                        selectedShape.points.set(1, new Point((int)(1.05 * B.x - 0.05 * A.x), (int)(1.05 * B.y - 0.05 * A.y)));
+                        myView.drawArea.repaint();
+                    }
+                }
+                case "small" -> {
+                    if (selectedShape != null) {
+                        Point A = selectedShape.points.get(0);
+                        Point B = selectedShape.points.get(1);
+                        selectedShape.points.set(1, new Point((int)(0.05 * A.x + 0.95 * B.x), (int)(0.05 * A.y + 0.95 * B.y)));
+                        myView.drawArea.repaint();
+                    }
+                }
             }
 
         }
     }
-
     public static class mouseListener implements MouseListener, MouseMotionListener {
 
-        Point startPoint, endPoint;
         Shape newShape;
         @Override
         public void mouseClicked(MouseEvent e) {
@@ -87,35 +99,39 @@ public class myController {
         public void mousePressed(MouseEvent e) {
             if(statusNow.equals("idle")) return;
             if(statusNow.equals("select")) {
+                selectedShape = null;
+                myView.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 for (Shape a: myModel.shapes) {
                     if(a.isSelected(e.getPoint())) {
                         selectedShape = a;
+                        startPoint = a.points.get(0);
+                        endPoint = a.points.get(1);
+                        dragPoint = e.getPoint();
                         myView.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                         break;
                     }
                 }
                 return ;
             }
-            startPoint = e.getPoint();
-            endPoint = startPoint;
+            Point p = e.getPoint();
             switch (statusNow) {
                 case "line":
-                    newShape = new Line(startPoint, endPoint, selectedColor);
+                    newShape = new Line(p, p, selectedColor);
                     myModel.shapes.add(newShape);
                     myView.drawArea.repaint();
                     break;
                 case "rectangle":
-                    newShape = new Rectangle(startPoint, endPoint, selectedColor);
+                    newShape = new Rectangle(p, p, selectedColor);
                     myModel.shapes.add(newShape);
                     myView.drawArea.repaint();
                     break;
                 case "circle":
-                    newShape = new Circle(startPoint, endPoint, selectedColor);
+                    newShape = new Circle(p, p, selectedColor);
                     myModel.shapes.add(newShape);
                     myView.drawArea.repaint();
                     break;
                 case "text":
-                    newShape = new Text(startPoint, endPoint, selectedColor, textString);
+                    newShape = new Text(p, p, selectedColor, textString);
                     myModel.shapes.add(newShape);
                     myView.drawArea.repaint();
                     break;
@@ -143,6 +159,12 @@ public class myController {
             if(statusNow.equals("rectangle") || statusNow.equals("circle") || statusNow.equals("line") || statusNow.equals("text")){
                 myModel.shapes.get(myModel.shapes.size() - 1).points.set(1, e.getPoint());
                 myView.drawArea.repaint();
+            } else if (statusNow.equals("select") && selectedShape != null) {
+                Point dragToPoint = e.getPoint();
+                int dx = dragToPoint.x - dragPoint.x, dy = dragToPoint.y - dragPoint.y;
+                selectedShape.points.set(0, new Point(startPoint.x + dx, startPoint.y + dy));
+                selectedShape.points.set(1, new Point(endPoint.x + dx, endPoint.y + dy));
+                myView.drawArea.repaint();
             }
         }
 
@@ -151,5 +173,26 @@ public class myController {
 
         }
     }
-
+    public static class saveListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            myModel.saveFile();
+        }
+    }
+    public static class loadListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            myModel.loadFile();
+        }
+    }
+    public static class messageListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JOptionPane.showMessageDialog(null,"* @author: Li feiyang" + System.getProperty("line.separator") +
+                    "* @student number: 3200105712" + System.getProperty("line.separator") +
+                    "* @created: 2022-11-16" + System.getProperty("line.separator") +
+                    "* @purpose: Project2 MiniCAD of Java Application Technology of ZJU" + System.getProperty("line.separator") +
+                    "*  Copyright 2022  All rights reserved.");
+        }
+    }
 }
