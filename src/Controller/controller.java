@@ -10,10 +10,10 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Map;
 
-public class myController {
-    public static myView view;
-    public static myModel model;
-    public myController(myView v, myModel m) {
+public class controller {
+    public static View.view view;
+    public static Model.model model;
+    public controller(View.view v, Model.model m) {
         view = v;
         model = m;
     }
@@ -44,13 +44,13 @@ public class myController {
 //                System.out.println(statusNow);
             }
             if(statusNow.equals("line") || statusNow.equals("rectangle") || statusNow.equals("circle")) selectedShape = null;
-            myView.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            View.view.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             switch (statusNow) {
                 case "color" -> {
                     selectedColor = JColorChooser.showDialog(view, "颜色选择器", Color.WHITE);
                     if (selectedShape != null) {
                         selectedShape.color = selectedColor;
-                        myView.drawArea.repaint();
+                        View.view.drawArea.repaint();
                     }
                 }
                 case "text" -> {
@@ -58,13 +58,13 @@ public class myController {
                     statusNow = "text";
                 }
                 case "clean" -> {
-                    myModel.shapes.clear();
-                    myView.drawArea.repaint();
+                    Model.model.shapes.clear();
+                    View.view.drawArea.repaint();
                 }
                 case "bold" -> {
                     if (selectedShape != null) {
                         selectedShape.thick += 2.0f;
-                        myView.drawArea.repaint();
+                        View.view.drawArea.repaint();
                     }
                 }
                 case "big" -> {
@@ -72,7 +72,7 @@ public class myController {
                         Point A = selectedShape.points.get(0);
                         Point B = selectedShape.points.get(1);
                         selectedShape.points.set(1, new Point((int)(1.05 * B.x - 0.05 * A.x), (int)(1.05 * B.y - 0.05 * A.y)));
-                        myView.drawArea.repaint();
+                        View.view.drawArea.repaint();
                     }
                 }
                 case "small" -> {
@@ -80,7 +80,22 @@ public class myController {
                         Point A = selectedShape.points.get(0);
                         Point B = selectedShape.points.get(1);
                         selectedShape.points.set(1, new Point((int)(0.05 * A.x + 0.95 * B.x), (int)(0.05 * A.y + 0.95 * B.y)));
-                        myView.drawArea.repaint();
+                        View.view.drawArea.repaint();
+                    }
+                }
+                case "thin" -> {
+                    if (selectedShape != null) {
+                        if(selectedShape.thick > 2.0f) selectedShape.thick -= 1.5f;
+                        View.view.drawArea.repaint();
+                    }
+                }
+                case "delete" -> {
+                    if (selectedShape != null) {
+                        Model.model.shapes.remove(selectedShape);
+                       // for(Shape shape : Model.model.shapes) {
+                          //  if(shape.equals(selectedShape)) Model.model.shapes.remove(shape);
+                       // }
+                        View.view.drawArea.repaint();
                     }
                 }
             }
@@ -100,14 +115,14 @@ public class myController {
             if(statusNow.equals("idle")) return;
             if(statusNow.equals("select")) {
                 selectedShape = null;
-                myView.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                for (Shape a: myModel.shapes) {
+                View.view.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                for (Shape a: Model.model.shapes) {
                     if(a.isSelected(e.getPoint())) {
                         selectedShape = a;
                         startPoint = a.points.get(0);
                         endPoint = a.points.get(1);
                         dragPoint = e.getPoint();
-                        myView.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                        View.view.drawArea.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                         break;
                     }
                 }
@@ -117,26 +132,26 @@ public class myController {
             switch (statusNow) {
                 case "line":
                     newShape = new Line(p, p, selectedColor);
-                    myModel.shapes.add(newShape);
-                    myView.drawArea.repaint();
+                    Model.model.shapes.add(newShape);
+                    View.view.drawArea.repaint();
                     break;
                 case "rectangle":
                     newShape = new Rectangle(p, p, selectedColor);
-                    myModel.shapes.add(newShape);
-                    myView.drawArea.repaint();
+                    Model.model.shapes.add(newShape);
+                    View.view.drawArea.repaint();
                     break;
                 case "circle":
                     newShape = new Circle(p, p, selectedColor);
-                    myModel.shapes.add(newShape);
-                    myView.drawArea.repaint();
+                    Model.model.shapes.add(newShape);
+                    View.view.drawArea.repaint();
                     break;
                 case "text":
                     newShape = new Text(p, p, selectedColor, textString);
-                    myModel.shapes.add(newShape);
-                    myView.drawArea.repaint();
+                    Model.model.shapes.add(newShape);
+                    View.view.drawArea.repaint();
                     break;
             }
-            myView.drawArea.repaint();
+            View.view.drawArea.repaint();
         }
 
         @Override
@@ -157,17 +172,16 @@ public class myController {
         @Override
         public void mouseDragged(MouseEvent e) {
             if(statusNow.equals("rectangle") || statusNow.equals("circle") || statusNow.equals("line") || statusNow.equals("text")){
-                myModel.shapes.get(myModel.shapes.size() - 1).points.set(1, e.getPoint());
-                myView.drawArea.repaint();
+                Model.model.shapes.get(Model.model.shapes.size() - 1).points.set(1, e.getPoint());
+                View.view.drawArea.repaint();
             } else if (statusNow.equals("select") && selectedShape != null) {
                 Point dragToPoint = e.getPoint();
                 int dx = dragToPoint.x - dragPoint.x, dy = dragToPoint.y - dragPoint.y;
                 selectedShape.points.set(0, new Point(startPoint.x + dx, startPoint.y + dy));
                 selectedShape.points.set(1, new Point(endPoint.x + dx, endPoint.y + dy));
-                myView.drawArea.repaint();
+                View.view.drawArea.repaint();
             }
         }
-
         @Override
         public void mouseMoved(MouseEvent e) {
 
@@ -176,23 +190,23 @@ public class myController {
     public static class saveListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            myModel.saveFile();
+            Model.model.saveFile();
         }
     }
     public static class loadListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            myModel.loadFile();
+            Model.model.loadFile();
         }
     }
     public static class messageListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            JOptionPane.showMessageDialog(null,"* @author: Li feiyang" + System.getProperty("line.separator") +
+            JOptionPane.showMessageDialog(null,"* @author: Li Feiyang" + System.getProperty("line.separator") +
                     "* @student number: 3200105712" + System.getProperty("line.separator") +
                     "* @created: 2022-11-16" + System.getProperty("line.separator") +
                     "* @purpose: Project2 MiniCAD of Java Application Technology of ZJU" + System.getProperty("line.separator") +
-                    "*  Copyright 2022  All rights reserved.");
+                    "*  Copyright 2022 All rights reserved.");
         }
     }
 }

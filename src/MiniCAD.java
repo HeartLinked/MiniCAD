@@ -1,11 +1,11 @@
-import Controller.myController;
-import Model.myModel;
-import View.myView;
+import Controller.controller;
+import Model.model;
+import View.view;
 
 public class MiniCAD {
     public static void main(String[] args) {
-        myView view = new myView();
-        myModel model = new myModel();
-        myController controller = new myController(view, model);
+        view view = new view();
+        model model = new model();
+        controller controller = new controller(view, model);
     }
 }

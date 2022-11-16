@@ -1,14 +1,9 @@
 package View;
 
-import Controller.myController.*;
-import Controller.myController;
+import Controller.controller.*;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,18 +28,24 @@ public class buttonBar extends Panel {
     public JToggleButton selectButton = new JToggleButton(selectIcon);
     ImageIcon cleanIcon = new ImageIcon("resource/clean.png");
     public JToggleButton cleanButton = new JToggleButton(cleanIcon);
+    ImageIcon deleteIcon = new ImageIcon("resource/delete.png");
+    public JToggleButton deleteButton = new JToggleButton(deleteIcon);
+    ImageIcon thinIcon = new ImageIcon("resource/thin.png");
+    public JToggleButton thinButton = new JToggleButton(thinIcon);
 
     public static Map<JToggleButton, String> map = new HashMap<>();
 
     buttonBar() {
-        setLayout(new GridLayout(5,1,4,4));
+        setLayout(new GridLayout(6,2,3,3));
 
         add(selectButton);
         add(lineButton);
         add(rectangleButton);
         add(circleButton);
         add(textButton);
+        add(deleteButton);
         add(boldButton);
+        add(thinButton);
         add(bigButton);
         add(smallButton);
         add(colorButton);
@@ -60,6 +61,9 @@ public class buttonBar extends Panel {
         map.put(smallButton, "small");
         map.put(colorButton, "color");
         map.put(cleanButton, "clean");
+        map.put(deleteButton, "delete");
+        map.put(thinButton, "thin");
+
 
         lineButton.addActionListener(new buttonStatusAutoChange());
         rectangleButton.addActionListener(new buttonStatusAutoChange());
@@ -71,6 +75,9 @@ public class buttonBar extends Panel {
         smallButton.addActionListener(new buttonStatusAutoChange());
         colorButton.addActionListener(new buttonStatusAutoChange());
         cleanButton.addActionListener(new buttonStatusAutoChange());
+        deleteButton.addActionListener(new buttonStatusAutoChange());
+        thinButton.addActionListener(new buttonStatusAutoChange());
+
     }
 
 }

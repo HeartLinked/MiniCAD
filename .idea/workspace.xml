@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21e78c5-7f8f-4190-8fb6-ffaa4d77c5d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/myController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/myController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/cadFileFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/cadFileFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MiniCAD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MiniCAD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/myModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/myModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/buttonBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/buttonBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/myMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/myMenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/myView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/myView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/menuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/menuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/view.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/view.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,12 @@
       <workItem from="1668390746206" duration="16000" />
       <workItem from="1668390842289" duration="708000" />
       <workItem from="1668393371155" duration="17727000" />
-      <workItem from="1668502945569" duration="14296000" />
+      <workItem from="1668502945569" duration="14789000" />
+      <workItem from="1668529853782" duration="1241000" />
+      <workItem from="1668569433404" duration="10000" />
+      <workItem from="1668572042704" duration="3720000" />
+      <workItem from="1668582195808" duration="4552000" />
+      <workItem from="1668610648378" duration="510000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,10 @@
 package View;
 
-import Controller.myController;
-import Model.myModel;
+import Controller.controller;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-class myMenuBar {
+class menuBar {
 
     JMenuBar menuBar = new JMenuBar();
 
@@ -18,7 +15,7 @@ class myMenuBar {
     JMenuItem save = new JMenuItem("Save");
     JMenuItem aboutMiniCAD = new JMenuItem("About MiniCAD");
 
-    myMenuBar() {
+    menuBar() {
         addElements();
         addListener();
     }
@@ -34,8 +31,8 @@ class myMenuBar {
     }
 
     void addListener() {
-        open.addActionListener(new myController.loadListener());
-        save.addActionListener(new myController.saveListener());
-        aboutMiniCAD.addActionListener(new myController.messageListener());
+        open.addActionListener(new controller.loadListener());
+        save.addActionListener(new controller.saveListener());
+        aboutMiniCAD.addActionListener(new controller.messageListener());
     }
 }

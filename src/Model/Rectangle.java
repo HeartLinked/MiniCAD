@@ -32,10 +32,10 @@ public class Rectangle extends Shape implements Serializable {//矩形
         Point rightDown = new Point(max(points.get(0).x, points.get(1).x), max(points.get(0).y, points.get(1).y));
         Point rightUp = new Point(max(points.get(0).x, points.get(1).x), min(points.get(0).y, points.get(1).y));
         Point leftDown = new Point(min(points.get(0).x, points.get(1).x), max(points.get(0).y, points.get(1).y));
-        if(pointToLine(leftUp, rightUp, p)< 12.0) return true;
-        if(pointToLine(leftUp, leftDown, p)< 12.0) return true;
-        if(pointToLine(leftDown, rightDown, p)< 12.0) return true;
-        if(pointToLine(rightUp, rightDown, p)< 12.0) return true;
+        if(pointToLine(leftUp, rightUp, p)< 25.0) return true;
+        if(pointToLine(leftUp, leftDown, p)< 25.0) return true;
+        if(pointToLine(leftDown, rightDown, p)< 25.0) return true;
+        if(pointToLine(rightUp, rightDown, p)< 25.0) return true;
         return false;
     }
 

@@ -1,15 +1,14 @@
 package Model;
 
 import Controller.cadFileFilter;
-import View.myView;
+import View.view;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 import java.util.ArrayList;
 
-public class myModel {
-
+public class model {
     public static ArrayList<Shape> shapes = new ArrayList<Shape>(); //存放所有图形
     public static void saveFile() {
         JFileChooser chooser=new JFileChooser();
@@ -52,7 +51,7 @@ public class myModel {
             else {
                 ObjectInputStream in = new ObjectInputStream(new FileInputStream(file));
                 shapes = ((ArrayList<Shape>)in.readObject());
-                myView.drawArea.repaint();
+                view.drawArea.repaint();
                 in.close();
             }
         }

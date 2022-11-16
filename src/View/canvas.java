@@ -1,26 +1,22 @@
 package View;
 
-import Controller.myController;
+import Controller.controller;
 import Model.Shape;
-import Model.myModel;
 
 import java.awt.*;
 import java.io.Serial;
-import java.util.ArrayList;
 
-import static Model.myModel.shapes;
+import static Model.model.shapes;
 
-public class MyCanvas extends Canvas {
+public class canvas extends Canvas {
 
     @Serial
     private static final long serialVersionUID = 1L;
 
-//    ArrayList<Model.Shape> shapes = new ArrayList<>(); //暂时用来传递参数
-
-    MyCanvas() {
+    canvas() {
         setBackground(Color.WHITE);
-        addMouseListener(new myController.mouseListener());
-        addMouseMotionListener(new myController.mouseListener());
+        addMouseListener(new controller.mouseListener());
+        addMouseMotionListener(new controller.mouseListener());
     }
 
     @Override

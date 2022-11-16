@@ -3,11 +3,11 @@ package View;
 import javax.swing.*;
 import java.awt.*;
 
-public class myView extends JFrame {
+public class view extends JFrame {
 
     private String shape="";
     public static canvas drawArea = new canvas();
-    public myView() {
+    public view() {
         super("MiniCAD");
         setSize(1000, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
