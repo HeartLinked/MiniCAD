@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SwingDemo.iml" filepath="$PROJECT_DIR$/SwingDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MiniCAD.iml" filepath="$PROJECT_DIR$/MiniCAD.iml" />
     </modules>
   </component>
 </project>

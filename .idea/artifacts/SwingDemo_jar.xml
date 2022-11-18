@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="SwingDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SwingDemo_jar</output-path>
+    <root id="root">
+      <element id="archive" name="SwingDemo.jar">
+        <element id="module-output" name="MiniCAD" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/resource" />
+    </root>
+  </artifact>
+</component>

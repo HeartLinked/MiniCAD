@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SwingDemo:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21e78c5-7f8f-4190-8fb6-ffaa4d77c5d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/cadFileFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/cadFileFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MiniCAD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MiniCAD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/buttonBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/buttonBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/menuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/menuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/view.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/view.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwingDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniCAD.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +49,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
@@ -87,6 +88,9 @@
       <workItem from="1668572042704" duration="3720000" />
       <workItem from="1668582195808" duration="4552000" />
       <workItem from="1668610648378" duration="510000" />
+      <workItem from="1668691500887" duration="171000" />
+      <workItem from="1668752045802" duration="191000" />
+      <workItem from="1668752327854" duration="130000" />
     </task>
     <servers />
   </component>
