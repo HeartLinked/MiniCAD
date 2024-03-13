@@ -5,7 +5,6 @@ import java.awt.*;
 
 public class view extends JFrame {
 
-    private String shape="";
     public static canvas drawArea = new canvas();
     public view() {
         super("MiniCAD");
@@ -26,7 +25,6 @@ public class view extends JFrame {
 
 
     private void init() {
-//        pack();
         setVisible(true);
         setResizable(false);
         setBackground(Color.WHITE);

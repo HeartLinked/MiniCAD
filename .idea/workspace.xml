@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21e78c5-7f8f-4190-8fb6-ffaa4d77c5d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwingDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniCAD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/view.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/view.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +90,7 @@
       <workItem from="1668691500887" duration="171000" />
       <workItem from="1668752045802" duration="191000" />
       <workItem from="1668752327854" duration="130000" />
+      <workItem from="1668753063940" duration="559000" />
     </task>
     <servers />
   </component>
