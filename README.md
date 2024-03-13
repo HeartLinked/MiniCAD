@@ -1,7 +1,7 @@
 # MiniCAD
 Course experiments for Java Application Technology, Zhejiang University
 
-powered by Li Feiyang, HeartLinked, git@github.com:HeartLinked/MiniCAD.git
+powered by Li Feiyang, HeartLinked
 ### Environment
 - MacOS Ventura 13.0.1
 - IDE：IntelliJ IDEA 2022.2.3 aarch64
