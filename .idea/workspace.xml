@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SwingDemo:jar" />
+      <artifact name="MiniCAD:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21e78c5-7f8f-4190-8fb6-ffaa4d77c5d1" name="Changes" comment="">
+    <list default="true" id="c21e78c5-7f8f-4190-8fb6-ffaa4d77c5d1" name="Changes" comment="update info">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MiniCAD_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SwingDemo_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SwingDemo_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/view.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/view.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniCAD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniCAD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/big.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/bold.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/bold.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/clean.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/clean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/color.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/color.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/line.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/line.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/rectangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/rectangle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/select.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/small.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/text.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/thin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/thin.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,33 +46,50 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2HQgZsy5YGg66YeEhQ0RoWDSOTc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MiniCAD.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/xfydemx/LFY/MiniCAD",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resource" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +123,18 @@
       <workItem from="1668752045802" duration="191000" />
       <workItem from="1668752327854" duration="130000" />
       <workItem from="1668753063940" duration="559000" />
+      <workItem from="1737458714148" duration="6552000" />
+      <workItem from="1737557899264" duration="1692000" />
     </task>
+    <task id="LOCAL-00001" summary="update info">
+      <option name="closed" value="true" />
+      <created>1737557711296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737557711296</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,5 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update info" />
+    <option name="LAST_COMMIT_MESSAGE" value="update info" />
   </component>
 </project>

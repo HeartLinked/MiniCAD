@@ -6,31 +6,67 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class buttonBar extends Panel {
-    ImageIcon lineIcon = new ImageIcon("resource/line.png");
+    ImageIcon lineIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/line.png"))
+    );
     public JToggleButton lineButton = new JToggleButton(lineIcon);
-    ImageIcon rectangleIcon = new ImageIcon("resource/rectangle.png");
+
+    ImageIcon rectangleIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/rectangle.png"))
+    );
     public JToggleButton rectangleButton = new JToggleButton(rectangleIcon);
-    ImageIcon circleIcon = new ImageIcon("resource/circle.png");
+
+    ImageIcon circleIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/circle.png"))
+    );
     public JToggleButton circleButton = new JToggleButton(circleIcon);
-    ImageIcon textIcon = new ImageIcon("resource/text.png");
+
+    ImageIcon textIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/text.png"))
+    );
     public JToggleButton textButton = new JToggleButton(textIcon);
-    ImageIcon boldIcon = new ImageIcon("resource/bold.png");
+
+    ImageIcon boldIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/bold.png"))
+    );
     public JToggleButton boldButton = new JToggleButton(boldIcon);
-    ImageIcon colorIcon = new ImageIcon("resource/color.png");
+
+    ImageIcon colorIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/color.png"))
+    );
     public JToggleButton colorButton = new JToggleButton(colorIcon);
-    ImageIcon bigIcon = new ImageIcon("resource/big.png");
+
+    ImageIcon bigIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/big.png"))
+    );
     public JToggleButton bigButton = new JToggleButton(bigIcon);
-    ImageIcon smallIcon = new ImageIcon("resource/small.png");
+
+    ImageIcon smallIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/small.png"))
+    );
     public JToggleButton smallButton = new JToggleButton(smallIcon);
-    ImageIcon selectIcon = new ImageIcon("resource/select.png");
+
+    ImageIcon selectIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/select.png"))
+    );
     public JToggleButton selectButton = new JToggleButton(selectIcon);
-    ImageIcon cleanIcon = new ImageIcon("resource/clean.png");
+
+    ImageIcon cleanIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/clean.png"))
+    );
     public JToggleButton cleanButton = new JToggleButton(cleanIcon);
-    ImageIcon deleteIcon = new ImageIcon("resource/delete.png");
+
+    ImageIcon deleteIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/delete.png"))
+    );
     public JToggleButton deleteButton = new JToggleButton(deleteIcon);
-    ImageIcon thinIcon = new ImageIcon("resource/thin.png");
+
+    ImageIcon thinIcon = new ImageIcon(
+            Objects.requireNonNull(getClass().getResource("/thin.png"))
+    );
     public JToggleButton thinButton = new JToggleButton(thinIcon);
 
     public static Map<JToggleButton, String> map = new HashMap<>();

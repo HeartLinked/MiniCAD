@@ -5,7 +5,7 @@
       <element id="archive" name="SwingDemo.jar">
         <element id="module-output" name="MiniCAD" />
       </element>
-      <element id="dir-copy" path="$PROJECT_DIR$/resource" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/resource" />
     </root>
   </artifact>
 </component>
