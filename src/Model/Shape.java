@@ -6,7 +6,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Shape implements Serializable{
+public abstract class Shape implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;

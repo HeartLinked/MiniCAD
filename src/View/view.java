@@ -23,12 +23,10 @@ public class view extends JFrame {
         init();
     }
 
-
     private void init() {
         setVisible(true);
         setResizable(false);
         setBackground(Color.WHITE);
         setLocationRelativeTo(null);
     }
-
 }

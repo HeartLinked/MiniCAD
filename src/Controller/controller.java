@@ -203,10 +203,9 @@ public class controller {
         @Override
         public void actionPerformed(ActionEvent e) {
             JOptionPane.showMessageDialog(null,"* @author: Li Feiyang" + System.getProperty("line.separator") +
-                    "* @student number: 3200105712" + System.getProperty("line.separator") +
-                    "* @created: 2022-11-16" + System.getProperty("line.separator") +
-                    "* @purpose: Project2 MiniCAD of Java Application Technology of ZJU" + System.getProperty("line.separator") +
-                    "*  Copyright 2022 All rights reserved.");
+                    "* @created: 2025-01-21" + System.getProperty("line.separator") +
+                    "* @purpose: MiniCAD Project of Object-Oriented Technology of ssPKU" + System.getProperty("line.separator") +
+                    "*  Copyright 2025 All rights reserved.");
         }
     }
 }
